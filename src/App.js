@@ -34,14 +34,14 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
           <a
             className="navbar-brand"
             href="#"
             onClick={() => newsEverythingApi()}
           >
-            Navbar
+            NewsOp
           </a>
           <button
             className="navbar-toggler"
@@ -67,28 +67,17 @@ function App() {
                 </a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
-      <div className="container text-center">
+      <div className="container text-center" style={{ marginTop: "2rem" }}>
         <ul>
-          <div className="row align-items-start">
+          <div className="row ">
             {data.map((value) => {
               return (
                 <div className="col-md-4">
                   <div
-                    className="card"
+                    className="card "
                     style={{ width: "18rem", marginBottom: "2rem" }}
                   >
                     <img
